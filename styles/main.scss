@@ -1,17 +1,55 @@
-$fontFamily: 'Roboto', sans-serif;
+$baseFont: 'Roboto', sans-serif;
+$headingFont: 'Lato', sans-serif;
+
+$baseColor: #202020;
+
+$primaryColor: #226666;
+$secondaryColor: #AA3939;
+$tertiaryColor: #AA8439;
 
 body {
-    font-family: $fontFamily;
-    background: #193231;
-    vertical-align: middle;
-    text-align: center;
-    font-size: 64px;
+    width: 90%;
+    margin: 0 auto;
+    background: $baseColor;
 }
 
 .body-container {
-    color: #51d138;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 100px;
+    color: $primaryColor;
+    font-family: $headingFont;
+    font-size: 64px;    
+}
+
+.nav-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+
+    margin: 0 auto;
+    padding-top: 5px;
+    width: 60%;
+
+    font-family: $baseFont;
+    font-size: 20px;
+    border-top: 1px $tertiaryColor solid;
+}
+
+.nav-container > span:hover {
+    color: $secondaryColor;
+    cursor: pointer;
+}
+
+.content {
+    background: lighten($baseColor, 1%);
+    font-family: $baseFont;
+    text-align: left;
+    font-size: 14px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 10px;
+    padding-top: 25px;
+    line-height: 1.5em;
 }
