@@ -1,0 +1,13 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background: #193231;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 64px; }
+
+.body-container {
+  color: #51d138;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; }
