@@ -3,9 +3,10 @@ $headingFont: 'Lato', sans-serif;
 
 $baseColor: #202020;
 
-$primaryColor: #226666;
+$fontPrimary: #226666;
+$fontSecondary: #9BC2C2;
+$tertiaryColor: #ce8d5f;
 $secondaryColor: #AA3939;
-$tertiaryColor: #AA8439;
 
 body {
     width: 90%;
@@ -17,7 +18,16 @@ body {
     vertical-align: middle;
     text-align: center;
     margin-top: 100px;
-    color: $primaryColor;
+    color: $fontPrimary;
+    font-family: $headingFont;
+    font-size: 64px;    
+}
+
+.body-container-landing {
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 15%;
+    color: $fontPrimary;
     font-family: $headingFont;
     font-size: 64px;    
 }
@@ -28,7 +38,7 @@ body {
     justify-content: space-around;
 
     margin: 0 auto;
-    padding-top: 5px;
+    padding-top: 10px;
     width: 60%;
 
     font-family: $baseFont;
@@ -37,13 +47,20 @@ body {
     border-top: 1px $tertiaryColor solid;
 }
 
-.nav-container > span:hover {
+.nav-link:hover {
     color: $secondaryColor;
     cursor: pointer;
 }
 
+.nav-link {
+    font-family: $baseFont;
+    color: $fontPrimary;
+    text-decoration: none;
+}
+
 .content {
     font-family: $baseFont;
+    color: $fontSecondary;
     text-align: left;
     font-size: 14px;
     width: 50%;
@@ -52,4 +69,68 @@ body {
     padding: 10px;
     padding-top: 25px;
     line-height: 1.5em;
+}
+
+.landing-content {
+    font-family: $headingFont;
+    color: $fontSecondary;
+    text-align: left;
+    font-size: 14px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding: 10px;
+    padding-top: 25px;
+    line-height: 1.5em;
+}
+
+.post-container {
+    clear: both;
+    margin-bottom: 30px;
+    padding-left: 25px;
+    padding-top: 10px;
+    border-top: 1px $tertiaryColor solid;
+}
+
+.post-container-3 {
+    clear: both;
+    margin-bottom: 40px;
+    padding-left: 25px;
+    padding-top: 10px;
+}
+
+.post-title {
+    padding: 5px;
+    font-size: 24px;
+    font-family: $baseFont;
+    color: $secondaryColor;
+}
+
+.post-title-right {
+    padding: 5px;
+    float: right;
+    font-size: 24px;
+    font-family: $baseFont;
+    color: $secondaryColor;
+}
+
+.line {
+    margin: 0 auto;
+    width: 60%;
+    border-bottom: 1px $tertiaryColor solid;
+    margin-bottom: 40px;
+}
+
+.read-more {
+    font-size: 14px;
+    float: right;
+    width: 50%;
+    margin: 0 auto;
+    font-family: $baseFont;
+}
+
+.read-more>a:hover {
+    cursor: pointer;
+    color: $secondaryColor;
+    text-decoration: none;
 }
